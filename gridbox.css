@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+    background-color: #50969b;
+}
+
+h1 {
+    text-align: center;
+}
+
+.article.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar article"
+        "footer footer ";
+}
