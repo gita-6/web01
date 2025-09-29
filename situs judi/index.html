@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>696 GACORRR - Demo</title>
+   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #042e38;
+      color: #fff;
+      min-height: 100vh;
+      line-height: 1.4;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navbar atas */
+    .navbar-top {
+      background-color: #013640;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .navbar-top .logo {
+      font-weight: 700;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+    }
+
+    .logo-icon {
+      background-color: #f89c0b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #fff;
+    }
+
+    .navbar-top .btn-group button {
+      padding: 8px 18px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      margin-left: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-login {
+      background-color: #168991;
+      color: white;
+    }
+
+    .btn-login:hover {
+      background-color: #126d6c;
+    }
+
+    .btn-register {
+      background-color: #f89c0b;
+      color: #14242d;
+    }
+
+    .btn-register:hover {
+      background-color: #cc7f0a;
+    }
+
+    /* Navbar bawah (menu) */
+    .navbar-menu {
+      background-color: #00404d;
+      display: flex;
+      align-items: center;
+      padding: 5px 20px;
+      gap: 15px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .navbar-menu a {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 10px;
+      color: #c9d1d5;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .navbar-menu a:hover,
+    .navbar-menu a.active {
+      color: #f89c0b;
+    }
+
+    /* Filter submenu */
+    .filter-menu {
+      background-color: #011a1f;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #013640;
+    }
+
+    .filter-menu a {
+      font-size: 13px;
+      color: #aaa;
+      cursor: pointer;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .filter-menu a:hover,
+    .filter-menu a.active {
+      border-bottom-color: #f89c0b;
+      color: #f89c0b;
+    }
+
+    /* Container konten */
+    .container {
+      max-width: 1200px;
+      margin: 20px auto 40px auto;
+      padding: 0 15px;
+    }
+
+    h2.section-title {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      border-left: 4px solid #f89c0b;
+      padding-left: 10px;
+    }
+
+    /* Grid game */
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      background-color: #01454d;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgb(0 0 0 / 0.4);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      display: block;
+      border-bottom: 2px solid #f89c0b;
+    }
+
+    .game-card .game-title {
+      padding: 8px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      background-color: #01454d;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Scrollbar untuk navbar menu */
+    .navbar-menu::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .navbar-menu::-webkit-scrollbar-thumb {
+      background-color: #f89c0b;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar atas -->
+  <nav class="navbar-top">
+    <div class="logo">
+      XXCats Slot
+      <div class="logo-icon">6969</div>
+    </div>
+    <div class="btn-group">
+      <button class="btn-login">MASUK</button>
+      <button class="btn-register">DAFTAR</button>
+    </div>
+  </nav>
+
+  <!-- Navbar menu bawah -->
+  <nav class="navbar-menu">
+    <a href="#" class="active">HOT GAMES ▼</a>
+    <a href="#">SLOTS ▼</a>
+    <a href="#">LIVE CASINO ▼</a>
+    <a href="#">RACE ▼</a>
+    <a href="#">TOGEL ▼</a>
+    <a href="#">OLAHRAGA ▼</a>
+    <a href="#">CRASH GAME ▼</a>
+    <a href="#">ARCADE ▼</a>
+    <a href="#">POKER ▼</a>
+  </nav>
+
+  <!-- Filter submenu -->
+  <div class="filter-menu">
+    <a href="#" class="active">Semua permainan</a>
+    <a href="#">Top 20</a>
+    <a href="#">New</a>
+    <a href="#">Classic</a>
+    <a href="#">Bonus Buy</a>
+    <a href="#">Reel kingdom</a>
+    <a href="#">Megaways</a>
+    <a href="#">Jackpot Play Games</a>
+    <a href="#">Video Slots</a>
+  </div>
+
+  <!-- Konten utama -->
+  <div class="container">
+    <h2 class="section-title">PRAGMATIC PLAY</h2>
+    <div class="game-grid">
+      <!-- Contoh game card -->
+      <div class="game-card">
+        <img src="https://i.imgur.com/7J5nYjc.jpg" alt="Gates of Olympus 1000" />
+        <div class="game-title">Gates of Olympus 1000</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/pYdzCh0.jpg" alt="Gates of Olympus Super Scatter" />
+        <div class="game-title">Gates of Olympus Super Scatter</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/Mzpds4f.jpg" alt="Mahjong Wins 3 – Black Scatter" />
+        <div class="game-title">Mahjong Wins 3 – Black Scatter</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/WiWnhvA.jpg" alt="Starlight Princess™ 1000" />
+        <div class="game-title">Starlight Princess™ 1000</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/wzZZYxl.jpg" alt="Gates of Olympus™" />
+        <div class="game-title">Gates of Olympus™</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/f3kfpvw.jpg" alt="Mahjong Wins 2" />
+        <div class="game-title">Mahjong Wins 2</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/6he2R6V.jpg" alt="Sweet Bonanza 1000" />
+        <div class="game-title">Sweet Bonanza 1000</div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://i.imgur.com/SLh49uP.jpg" alt="Sweet Bonanza Super Scatter" />
+        <div class="game-title">Sweet Bonanza Super Scatter</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+</html>
